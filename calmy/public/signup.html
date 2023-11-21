@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calmy | Sign Up</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+  </head>
+  <body class="bg-main-bg bg-fixed">
+    <div class="flex flex-row w-screen items-center py-10">
+      <div class="w-1/2 flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-extrabold">Sign Up</h1>
+        <p class="text-center px-32 pt-6">
+          Hello, Folks! Create an account with your Email and let’s be friends!
+        </p>
+        <form action="">
+          <div class="flex flex-col items-center pt-10">
+            <label for="email" class="text-xl font-semibold pb-2">Email</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
+          <div class="flex flex-col items-center pt-10">
+            <label for="password" class="text-xl font-semibold pb-2"
+              >Password</label
+            ><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Your Password Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
+          <div class="flex flex-col items-center pt-10">
+            <label for="cPassword" class="text-xl font-semibold pb-2"
+              >Confirm Password</label
+            ><br />
+            <input
+              type="password"
+              id="cPassword"
+              name="cPassword"
+              placeholder="Confirm Your Password Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
+          <div class="flex flex-row items-center justify-center my-8">
+            <a
+              href="index.html"
+              class="px-12 py-4 bg-primary rounded-full text-white"
+            >
+              Sign Up
+            </a>
+          </div>
+        </form>
+        <p class="text-base">
+          Already have an account?
+          <span><a href="signin.html" class="font-bold">Sign In</a></span>
+        </p>
+      </div>
+      <div class="w-1/2 p-6">
+        <img src="/src/images/ill-signup.svg" alt="Sign Up" />
+      </div>
+    </div>
+  </body>
+</html>

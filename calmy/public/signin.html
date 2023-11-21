@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calmy | Sign In</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+  </head>
+  <body class="bg-main-bg bg-fixed">
+    <div class="flex flex-row w-screen h-screen items-center">
+      <div class="w-1/2 p-6">
+        <img src="/src/images/ill-signin.svg" alt="Sign In" />
+      </div>
+      <div class="w-1/2 flex flex-col items-center justify-center">
+        <h1 class="text-4xl font-extrabold">Sign In</h1>
+        <p class="text-center px-24 pt-6">
+          Welcome Back Calmy’s Friend! Sign In with your email and let’s have
+          fun together!
+        </p>
+        <form action="">
+          <div class="flex flex-col items-center pt-10">
+            <label for="email" class="text-xl font-semibold pb-2">Email</label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
+          <div class="flex flex-col items-center pt-10">
+            <label for="email" class="text-xl font-semibold pb-2"
+              >Password</label
+            ><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Your Password Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
+          <div class="flex flex-row items-center justify-center my-8">
+            <a
+              href="index.html"
+              class="px-12 py-4 bg-primary rounded-full text-white"
+            >
+              Sign In
+            </a>
+          </div>
+        </form>
+        <p class="text-base">
+          Didn’t have an account?
+          <span><a href="signup.html" class="font-bold">Sign Up</a></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
