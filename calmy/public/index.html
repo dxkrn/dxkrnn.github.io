@@ -3,13 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Calmy | Home</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
-    <header class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5">
+  <body>
+    <header
+      class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5"
+      id="navbar"
+    >
       <nav class="flex flex-row justify-between px-6 py-6 items-center">
         <div class="items-center">
           <a href="/public/index.html">
@@ -51,7 +60,7 @@
           </ul>
           <a
             href="signin.html"
-            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins hover:bg-transparent hover:text-black"
+            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
             Get Started
           </a>
@@ -79,7 +88,7 @@
             <div
               class="flex flex-row bg-black px-6 py-2 rounded-xl gap-x-4 items-center hover:bg-grey"
             >
-              <img src="/src/icons/google-play.svg" alt="Play" width="32px" />
+              <img src="../src/icons/google-play.svg" alt="Play" width="32px" />
               <div class="flex flex-col text-white">
                 <p class="text-xs">GET IT ON</p>
                 <p class="font-medium">Google Play</p>
@@ -90,7 +99,7 @@
             <div
               class="flex flex-row bg-black px-6 py-2 rounded-xl gap-x-4 items-center hover:bg-grey"
             >
-              <img src="/src/icons/apple.svg" alt="Play" width="32px" />
+              <img src="../src/icons/apple.svg" alt="Play" width="32px" />
               <div class="flex flex-col text-white">
                 <p class="text-xs">DOWNLOAD ON</p>
                 <p class="font-medium">App Store</p>
@@ -100,7 +109,7 @@
         </div>
       </div>
       <div class="w-1/2 h-screen p-2 items-center pt-10">
-        <img src="/src/images/mockup-home.png" alt="" />
+        <img src="../src/images/mockup-home.png" alt="" />
       </div>
     </section>
     <!-- SECTION HERO END -->
@@ -123,7 +132,7 @@
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
             <img
-              src="/src/images/feature-chatbot.svg"
+              src="../src/images/feature-chatbot.svg"
               alt="Chatbot"
               width="96px"
             />
@@ -148,7 +157,7 @@
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
             <img
-              src="/src/images/feature-lessons.svg"
+              src="../src/images/feature-lessons.svg"
               alt="Chatbot"
               width="96px"
             />
@@ -173,7 +182,7 @@
             class="border-2 border-white bg-gradient-to-t from-white to-transparent w-1/3 p-6 m-6 rounded-xl"
           >
             <img
-              src="/src/images/feature-exercises.svg"
+              src="../src/images/feature-exercises.svg"
               alt="Chatbot"
               width="96px"
             />
@@ -196,7 +205,7 @@
         <a href="#">
           <div class="flex flex-row justify-end w-screen px-6 items-center">
             <p class="text-base pr-2">See All Features</p>
-            <img src="/src/icons/arrow-right.svg" alt="" width="24px" /></div
+            <img src="../src/icons/arrow-right.svg" alt="" width="24px" /></div
         ></a>
       </div>
     </section>
@@ -206,7 +215,7 @@
     <section class="flex flex-row w-screen h-screen px-6">
       <div class="w-1/2 p-2 items-center pt-24 flex flex-row justify-center">
         <img
-          src="/src/images/banner-landing-community.png"
+          src="../src/images/banner-landing-community.png"
           alt=""
           width="72%"
         />
@@ -253,14 +262,14 @@
       </div>
       <div class="w-1/2 flex flex-col justify-center items-center">
         <img
-          src="/src/images/banner-volunteer.png"
+          src="../src/images/banner-volunteer.png"
           alt="Volunteer"
           width="50%"
         />
         <div class="w-1/2 bg-white p-4 flex flex-col rounded-b-xl">
           <div class="flex flex-row gap-x-2">
             <img
-              src="/src/images/profile-volunteer.png"
+              src="../src/images/profile-volunteer.png"
               alt="Profile"
               width="25%"
             />
@@ -275,11 +284,11 @@
             helped many...
           </p>
           <div class="flex flex-row pt-6 pb-4 gap-x-2 items-center">
-            <img src="/src/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/src/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/src/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/src/icons/star-active.svg" alt="Star" width="12%" />
-            <img src="/src/icons/star-inactive.svg" alt="Star" width="12%" />
+            <img src="../src/icons/star-active.svg" alt="Star" width="12%" />
+            <img src="../src/icons/star-active.svg" alt="Star" width="12%" />
+            <img src="../src/icons/star-active.svg" alt="Star" width="12%" />
+            <img src="../src/icons/star-active.svg" alt="Star" width="12%" />
+            <img src="../src/icons/star-inactive.svg" alt="Star" width="12%" />
             <p>(4,0)</p>
           </div>
         </div>
@@ -299,7 +308,7 @@
         <div
           class="w-[48%] p-4 bg-gradient-to-tr from-transparent to-white border-2 border-white rounded-xl flex flex-row gap-x-4"
         >
-          <img src="/src/images/blog-1.svg" alt="Blog" width="80%" />
+          <img src="../src/images/blog-1.svg" alt="Blog" width="80%" />
           <div class="flex flex-col justify-center gap-y-4">
             <h3 class="text-lg font-bold">Separation Anxiety</h3>
             <p class="text-base text-justify">
@@ -312,7 +321,7 @@
         <div
           class="w-[48%] p-4 bg-gradient-to-tr from-transparent to-white border-2 border-white rounded-xl flex flex-row gap-x-4"
         >
-          <img src="/src/images/blog-1.svg" alt="Blog" width="80%" />
+          <img src="../src/images/blog-1.svg" alt="Blog" width="80%" />
           <div class="flex flex-col justify-center gap-y-4">
             <h3 class="text-lg font-bold">Interpersonal Therapy</h3>
             <p class="text-base text-justify">
@@ -325,7 +334,7 @@
       </div>
       <a href="#" class="flex flex-row justify-end pt-12 items-center">
         <p class="text-base pr-2">See All Blogs</p>
-        <img src="/src/icons/arrow-right.svg" alt="" width="24px"
+        <img src="../src/icons/arrow-right.svg" alt="" width="24px"
       /></a>
     </section>
     <!-- SECTION BLOG END -->
@@ -450,5 +459,20 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script>
+      var lastScrollTop;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>

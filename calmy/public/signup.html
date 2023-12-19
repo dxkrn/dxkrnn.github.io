@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Sign Up</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <div class="flex flex-row w-screen items-center py-10">
       <div class="w-1/2 flex flex-col items-center justify-center">
         <h1 class="text-4xl font-extrabold">Sign Up</h1>
@@ -15,6 +22,19 @@
           Hello, Folks! Create an account with your Email and let’s be friends!
         </p>
         <form action="">
+          <div class="flex flex-col items-center pt-10">
+            <label for="username" class="text-xl font-semibold pb-2"
+              >Username</label
+            ><br />
+            <input
+              type="username"
+              id="username"
+              name="username"
+              placeholder="Your username Here.."
+              value=""
+              class="bg-white px-4 py-4 rounded-lg text-center text-base"
+            /><br />
+          </div>
           <div class="flex flex-col items-center pt-10">
             <label for="email" class="text-xl font-semibold pb-2">Email</label
             ><br />
@@ -56,7 +76,7 @@
           <div class="flex flex-row items-center justify-center my-8">
             <a
               href="index.html"
-              class="px-12 py-4 bg-primary rounded-full text-white"
+              class="px-12 py-4 bg-primary rounded-full text-white hover:bg-primaryDark"
             >
               Sign Up
             </a>
@@ -67,8 +87,8 @@
           <span><a href="signin.html" class="font-bold">Sign In</a></span>
         </p>
       </div>
-      <div class="w-1/2 p-6">
-        <img src="/src/images/ill-signup.svg" alt="Sign Up" />
+      <div class="w-1/2 bottom-0 right-0 fixed">
+        <img src="../src/images/ill-signup.svg" alt="Sign Up" width="90%" />
       </div>
     </div>
   </body>

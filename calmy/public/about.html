@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | About</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <!-- HEADER START -->
-    <header class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5">
+    <header
+      class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5"
+      id="navbar"
+    >
       <nav class="flex flex-row justify-between px-6 py-6 items-center">
         <div class="items-center">
           <a href="/public/index.html">
@@ -51,7 +61,7 @@
           </ul>
           <a
             href="signin.html"
-            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins hover:bg-transparent hover:text-black"
+            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
             Get Started
           </a>
@@ -75,7 +85,7 @@
         </p>
       </div>
       <div class="w-1/2 p-2 pt-24 items-center flex flex-row justify-center">
-        <img src="/src/images/banner-about.png" alt="" width="80%" />
+        <img src="../src/images/banner-about.png" alt="" width="80%" />
       </div>
     </section>
     <!-- SECTION HERO END -->
@@ -83,23 +93,31 @@
     <!-- SECTION VISION START -->
     <section class="flex flex-row w-screen h-screen bg-bgDark">
       <div class="w-1/2 p-2 items-center flex flex-row justify-center">
-        <img src="/src/images/logo-calmy.svg" alt="" width="72%" />
+        <img src="../src/images/logo-calmy.svg" alt="" width="72%" />
       </div>
       <div class="w-1/2 h-screen flex flex-col p-6 justify-center">
         <h2 class="text-xl font-bold pt-10">#GET TO KNOW OUR GOALS</h2>
         <h1 class="text-[42px] font-extrabold">Our Vision and Mission</h1>
-        <p class="text-base pt-6 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Duis aute irure dolor in reprehenderit in voluptate velit
-          esse cillum : Excepteur sint occaecat cupidatat non Quis nostrud
-          exercitation ullamco laboris nisi Magnam aliquam quaerat voluptatem Ut
-          enim ad minima veniam quis nostrum Vel illum qui dolorem eum fugiat
-          quo
+        <h3 class="text-base font-bold pt-8">Vision</h3>
+        <p class="text-base text-justify">
+          To become #1 anxiety disorder education and consultation platform in
+          the world
         </p>
+        <h3 class="text-base font-bold pt-4">Mission</h3>
+        <ul class="list-disc pl-6">
+          <li class="text-base text-justify">
+            Providing mental health education, especially anxiety disorders,
+            independently to students
+          </li>
+          <li class="text-base text-justify">
+            Providing storytelling friends and talk therapy as an effort to
+            prevent and treat anxiety disorders in students
+          </li>
+          <li class="text-base text-justify">
+            Providing consultation services as an effort to prevent and treat
+            anxiety disorders in students
+          </li>
+        </ul>
       </div>
     </section>
     <!-- SECTION VISION END -->
@@ -113,50 +131,50 @@
         </div>
         <div class="flex flex-row justify-around pt-8">
           <div class="flex flex-col items-center">
-            <img src="/src/images/team-ima.png" alt="" width="40%" />
+            <img src="../src/images/team-ima.png" alt="" width="40%" />
             <h3 class="text-lg font-bold pt-6">Ima Nur Chasanah</h3>
             <p class="text-base">Chief Executive Officer</p>
             <div class="flex flex-row pt-4 gap-x-4">
               <a href="#">
-                <img src="/src/icons/instagram.svg" alt="" width="100%" />
+                <img src="../src/icons/instagram.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/linkedin.svg" alt="" width="100%" />
+                <img src="../src/icons/linkedin.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/github.svg" alt="" width="100%" />
+                <img src="../src/icons/github.svg" alt="" width="100%" />
               </a>
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img src="/src/images/team-junna.png" alt="" width="40%" />
+            <img src="../src/images/team-junna.png" alt="" width="40%" />
             <h3 class="text-lg font-bold pt-6">Junnatunnisa</h3>
             <p class="text-base">Chief FInancial Officer</p>
             <div class="flex flex-row pt-4 gap-x-4">
               <a href="#">
-                <img src="/src/icons/instagram.svg" alt="" width="100%" />
+                <img src="../src/icons/instagram.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/linkedin.svg" alt="" width="100%" />
+                <img src="../src/icons/linkedin.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/github.svg" alt="" width="100%" />
+                <img src="../src/icons/github.svg" alt="" width="100%" />
               </a>
             </div>
           </div>
           <div class="flex flex-col items-center">
-            <img src="/src/images/team-dicky.png" alt="" width="40%" />
+            <img src="../src/images/team-dicky.png" alt="" width="40%" />
             <h3 class="text-lg font-bold pt-6">Dicky Khurniawan</h3>
             <p class="text-base">Chief Technology Officer</p>
             <div class="flex flex-row pt-4 gap-x-4">
               <a href="#">
-                <img src="/src/icons/instagram.svg" alt="" width="100%" />
+                <img src="../src/icons/instagram.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/linkedin.svg" alt="" width="100%" />
+                <img src="../src/icons/linkedin.svg" alt="" width="100%" />
               </a>
               <a href="#">
-                <img src="/src/icons/github.svg" alt="" width="100%" />
+                <img src="../src/icons/github.svg" alt="" width="100%" />
               </a>
             </div>
           </div>
@@ -285,5 +303,20 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script>
+      var lastScrollTop;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>

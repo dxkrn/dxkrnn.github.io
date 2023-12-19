@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Features</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <!-- HEADER START -->
-    <header class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5">
+    <header
+      class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5"
+      id="navbar"
+    >
       <nav class="flex flex-row justify-between px-6 py-6 items-center">
         <div class="items-center">
           <a href="/public/index.html">
@@ -51,7 +61,7 @@
           </ul>
           <a
             href="signin.html"
-            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins hover:bg-transparent hover:text-black"
+            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
             Get Started
           </a>
@@ -74,27 +84,30 @@
           get ready to discover our features!
         </p>
         <a
-          href="#"
+          onclick="scrollToSection('first_feature')"
           class="bg-transparent border-2 border-primary text-primary px-12 py-3 rounded-full w-fit mt-12 hover:text-white hover:bg-primary"
         >
           See All</a
         >
       </div>
       <div class="w-1/2 p-2 items-end flex flex-row justify-end">
-        <img src="/src/images/banner-features.png" alt="" width="90%" />
+        <img src="../src/images/banner-features.png" alt="" width="90%" />
       </div>
     </section>
     <!-- SECTION HERO END -->
 
     <!-- SECTION CHATBOT START -->
-    <section class="flex flex-col w-screen h-screen py-6 bg-bgDark">
+    <section
+      class="flex flex-col w-screen h-screen py-6 bg-bgDark"
+      id="first_feature"
+    >
       <div class="flex flex-col items-center pb-4">
         <h2 class="text-base font-bold">#FEATURE</h2>
         <h1 class="text-4xl font-extrabold">VOICE CHATBOT</h1>
       </div>
       <div class="flex flex-row w-screen p-6 justify-center items-center">
         <div class="w-3/5 h-[480px] flex flex-row justify-between">
-          <img src="/src/images/features/feature-chatbot.png" alt="" />
+          <img src="../src/images/features/feature-chatbot.png" alt="" />
         </div>
         <div class="w-2/5 flex flex-col justify-center px-6">
           <p class="text-base text-justify">
@@ -131,13 +144,13 @@
       <div class="flex flex-row w-screen p-6 justify-center items-center">
         <div class="w-2/5 flex flex-col justify-center px-6">
           <p class="text-base text-justify">
-            "The Lessons feature contains various materials or comprehensive
+            The Lessons feature contains various materials or comprehensive
             information about the mental health disorder, anxiety disorder.
             Users can adjust the text size from small, medium, to large to suit
             their reading comfort.
           </p>
           <p class="text-base text-justify pt-4">
-            "The Lessons feature contains various materials or comprehensive
+            The Lessons feature contains various materials or comprehensive
             information about the mental health disorder, anxiety disorder.
             Users can adjust the text size from small, medium, to large to suit
             their reading comfort.
@@ -157,11 +170,187 @@
           </ol>
         </div>
         <div class="w-3/5 h-[480px] flex flex-row justify-between">
-          <img src="/src/images/features/feature-lessons.png" alt="" />
+          <img src="../src/images/features/feature-lessons.png" alt="" />
         </div>
       </div>
     </section>
     <!-- SECTION LESSON END -->
+
+    <!-- SECTION ACTIVITIES START -->
+    <section class="flex flex-col w-screen h-screen py-6 bg-bgDark">
+      <div class="flex flex-col items-center pb-4">
+        <h2 class="text-base font-bold">#FEATURE</h2>
+        <h1 class="text-4xl font-extrabold">ACTIVITIES</h1>
+      </div>
+      <div class="flex flex-row w-screen p-6 justify-center items-center">
+        <div class="w-3/5 h-[480px] flex flex-row justify-between">
+          <img src="../src/images/features/feature-activities.png" alt="" />
+        </div>
+        <div class="w-2/5 flex flex-col justify-center px-6">
+          <p class="text-base text-justify">
+            Activities are features that users can use to carry out various
+            activities. In this feature, users will be given recommendations for
+            various positive activities. With positive activities, users will be
+            able to improve their lifestyle and can prevent, reduce and overcome
+            anxiety in users.
+          </p>
+          <p class="text-base text-justify pt-4">
+            With this "activities" feature, users can carry out various
+            activities, such as:
+          </p>
+          <ol class="list-disc px-6">
+            <li class="text-base text-justify">Exercise</li>
+            <li class="text-base text-justify">Challenges</li>
+            <li class="text-base text-justify">Self-care</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION ACTIVITIES END -->
+
+    <!-- SECTION JOURNAL START -->
+    <section class="flex flex-col w-screen h-screen py-6">
+      <div class="flex flex-col items-center pb-4">
+        <h2 class="text-base font-bold">#FEATURE</h2>
+        <h1 class="text-4xl font-extrabold">DAILY JOURNAL</h1>
+      </div>
+      <div class="flex flex-row w-screen p-6 justify-center items-center">
+        <div class="w-2/5 flex flex-col justify-center px-6">
+          <p class="text-base text-justify">
+            Daily journal is a feature that can be used by users to record their
+            daily activities. With this feature, users can record mood, weather
+            and write diaries freely in the form of text, images or audio
+            recordings. This feature is provided as a personal diary that can be
+            viewed and filled in whenever the user wants to fill it in.
+          </p>
+          <p class="text-base text-justify pt-4">In this feature, users can:</p>
+          <ol class="list-disc px-6">
+            <li class="text-base text-justify">Choose a date</li>
+            <li class="text-base text-justify">Enter and view notes</li>
+            <li class="text-base text-justify">
+              Enter mood and weather conditions
+            </li>
+          </ol>
+        </div>
+        <div class="w-3/5 h-[480px] flex flex-row justify-between">
+          <img src="../src/images/features/feature-journal.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- SECTION JOURNAL END -->
+
+    <!-- SECTION CONSULTATION START -->
+    <section class="flex flex-col w-screen h-screen py-6 bg-bgDark">
+      <div class="flex flex-col items-center pb-4">
+        <h2 class="text-base font-bold">#FEATURE</h2>
+        <h1 class="text-4xl font-extrabold">CONSULTATION</h1>
+      </div>
+      <div class="flex flex-row w-screen p-6 justify-center items-center">
+        <div class="w-3/5 h-[480px] flex flex-row justify-between">
+          <img src="../src/images/features/feature-consultation.png" alt="" />
+        </div>
+        <div class="w-2/5 flex flex-col justify-center px-6">
+          <p class="text-base text-justify">
+            The Consultation feature is a feature that can be used if the user
+            wants to talk about or consult about things they have experienced
+            with experts, namely psychologists or psychiatrists. The
+            consultation feature provides free consultation services within a
+            certain time period. If the user requires consultation services with
+            a psychologist outside of these times, the user will be given
+            recommendations for psychologist services available in their
+            respective areas.
+          </p>
+          <p class="text-base text-justify pt-4">
+            In this feature, users will:
+          </p>
+          <ol class="list-disc px-6">
+            <li class="text-base text-justify">
+              Get recommendations for nearest consultation
+            </li>
+            <li class="text-base text-justify">Get a free consultation</li>
+            <li class="text-base text-justify">
+              Share stories and get solutions from experts
+            </li>
+            <li class="text-base text-justify">and more</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION CONSULTATION END -->
+
+    <!-- SECTION ANXIETY TEST START -->
+    <section class="flex flex-col w-screen h-screen py-6">
+      <div class="flex flex-col items-center pb-4">
+        <h2 class="text-base font-bold">#FEATURE</h2>
+        <h1 class="text-4xl font-extrabold">ANXIETY TEST</h1>
+      </div>
+      <div class="flex flex-row w-screen p-6 justify-center items-center">
+        <div class="w-2/5 flex flex-col justify-center px-6">
+          <p class="text-base text-justify">
+            Anxiety Disorder Test is a feature provided to measure the level of
+            anxiety experienced by users. This feature provides several
+            questions that users can answer according to their respective
+            conditions. From these answers, test results will appear which are
+            the user's anxiety level.
+          </p>
+          <p class="text-base text-justify pt-4">
+            In this feature, users will:
+          </p>
+          <ol class="list-disc px-6">
+            <li class="text-base text-justify">Answer 14 questions</li>
+            <li class="text-base text-justify">
+              Choose answer according to user's conditions
+            </li>
+            <li class="text-base text-justify">
+              See the results of the anxiety test
+            </li>
+            <li class="text-base text-justify">
+              Get recommendations from test results
+            </li>
+          </ol>
+        </div>
+        <div class="w-3/5 h-[480px] flex flex-row justify-between">
+          <img src="../src/images/features/feature-anxietytest.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- SECTION ANXIETY TEST END -->
+
+    <!-- SECTION SOS START -->
+    <section class="flex flex-col w-screen h-screen py-6 bg-bgDark">
+      <div class="flex flex-col items-center pb-4">
+        <h2 class="text-base font-bold">#FEATURE</h2>
+        <h1 class="text-4xl font-extrabold">SOS</h1>
+      </div>
+      <div class="flex flex-row w-screen p-6 justify-center items-center">
+        <div class="w-3/5 h-[480px] flex flex-row justify-between">
+          <img src="../src/images/features/feature-sos.png" alt="" />
+        </div>
+        <div class="w-2/5 flex flex-col justify-center px-6">
+          <p class="text-base text-justify">
+            SOS is a feature provided to deal with emergencies. The emergency
+            situation referred to is when a user who suffers from an anxiety
+            disorder feels symptoms suddenly recur and he needs help to help him
+            feel calm again. In this SOS feature, users will be given guidance
+            to carry out in stages to provide a feeling of calm. If all stages
+            have been carried out and the user feels they need further
+            treatment, the user will be given the option to contact the
+            emergency call center.
+          </p>
+          <p class="text-base text-justify pt-4">With SOS, users can:</p>
+          <ol class="list-disc px-6">
+            <li class="text-base text-justify">
+              Listen to or read emergency instructions
+            </li>
+            <li class="text-base text-justify">
+              Find out how to prevent Anxiety Disorder
+            </li>
+            <li class="text-base text-justify">Contact emergency contacts</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION SOS END -->
 
     <!-- FOOTER START -->
     <footer>
@@ -283,5 +472,29 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script>
+      var lastScrollTop;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+
+    <script>
+      function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
   </body>
 </html>

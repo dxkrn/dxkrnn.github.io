@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Sign In</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <div class="flex flex-row w-screen h-screen items-center">
       <div class="w-1/2 p-6">
-        <img src="/src/images/ill-signin.svg" alt="Sign In" />
+        <img src="../src/images/ill-signin.svg" alt="Sign In" />
       </div>
       <div class="w-1/2 flex flex-col items-center justify-center">
         <h1 class="text-4xl font-extrabold">Sign In</h1>
@@ -47,7 +54,7 @@
           <div class="flex flex-row items-center justify-center my-8">
             <a
               href="index.html"
-              class="px-12 py-4 bg-primary rounded-full text-white"
+              class="px-12 py-4 bg-primary rounded-full text-white hover:bg-primaryDark"
             >
               Sign In
             </a>

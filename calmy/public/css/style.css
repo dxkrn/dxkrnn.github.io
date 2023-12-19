@@ -543,6 +543,14 @@ html {
   position: fixed;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -718,6 +726,10 @@ html {
   row-gap: 1rem;
 }
 
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -793,7 +805,7 @@ html {
 }
 
 .bg-main-bg {
-  background-image: url('/src/images/background.svg');
+  background-image: url('../src/images/background.svg');
 }
 
 .from-transparent {
@@ -925,6 +937,10 @@ html {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pl-6 {
+  padding-left: 1.5rem;
 }
 
 .pr-2 {
@@ -1068,6 +1084,11 @@ html {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgba(67, 73, 255, 0.25));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .backdrop-blur-xl {

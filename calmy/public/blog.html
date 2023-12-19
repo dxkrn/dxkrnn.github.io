@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Blog</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <!-- HEADER START -->
-    <header class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5">
+    <header
+      class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5"
+      id="navbar"
+    >
       <nav class="flex flex-row justify-between px-6 py-6 items-center">
         <div class="items-center">
           <a href="/public/index.html">
@@ -51,7 +61,7 @@
           </ul>
           <a
             href="signin.html"
-            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins hover:bg-transparent hover:text-black"
+            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
             Get Started
           </a>
@@ -86,12 +96,12 @@
             class="w-10/12 bg-primary text-base text-white focus:outline-none"
           />
           <button>
-            <img src="/src/icons/search.svg" alt="" width="60%" />
+            <img src="../src/icons/search.svg" alt="" width="60%" />
           </button>
         </form>
       </div>
       <div class="w-1/2 p-2 items-center flex flex-row justify-center">
-        <img src="/src/images/banner-blog.png" alt="" width="72%" />
+        <img src="../src/images/banner-blog.png" alt="" width="72%" />
       </div>
     </section>
     <!-- SECTION HERO END -->
@@ -101,20 +111,32 @@
       <div class="flex flex-col pt-6 pb-10 px-6">
         <h2 class="text-2xl font-bold">Popular Blog</h2>
         <div class="grid grid-cols-3 pt-4">
-          <a href="#" class="flex flex-col px-2 hover:brightness-75">
-            <img src="/src/images/blog/blog-popular-separation.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-popular-separation.png" alt="" />
             <h3 class="text-base font-bold pt-2">Separation Anxiety</h3>
             <p class="text-sm">Anxiety</p>
           </a>
-          <a href="#" class="flex flex-col px-2 hover:brightness-75">
-            <img src="/src/images/blog/blog-popular-muscle.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-popular-muscle.png" alt="" />
             <h3 class="text-base font-bold pt-2">
               Progressive Muscle Relaxation
             </h3>
             <p class="text-sm">Relaxation</p>
           </a>
-          <a href="#" class="flex flex-col px-2 hover:brightness-75">
-            <img src="/src/images/blog/blog-popular-interpesonal.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 hover:brightness-75"
+          >
+            <img
+              src="../src/images/blog/blog-popular-interpesonal.png"
+              alt=""
+            />
             <h3 class="text-base font-bold pt-2">Interpersonal Therapy</h3>
             <p class="text-sm">Therapy</p>
           </a>
@@ -176,53 +198,77 @@
             href="blog-read.html"
             class="flex flex-col px-2 pb-6 hover:brightness-75"
           >
-            <img src="/src/images/blog/blog-breath.png" alt="" />
+            <img src="../src/images/blog/blog-breath.png" alt="" />
             <h3 class="text-base font-bold pt-2">Types of Breathing</h3>
             <p class="text-sm">Breathing</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-visualizationn.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-visualizationn.png" alt="" />
             <h3 class="text-base font-bold pt-2">Visualization Tips</h3>
             <p class="text-sm">Visualization</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-muscle.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-muscle.png" alt="" />
             <h3 class="text-base font-bold pt-2">
               Progressive Muscle Relaxation
             </h3>
             <p class="text-sm">Relaxation</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-exercise.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-exercise.png" alt="" />
             <h3 class="text-base font-bold pt-2">Exercise Recomendations</h3>
             <p class="text-sm">Activity</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-separation.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-separation.png" alt="" />
             <h3 class="text-base font-bold pt-2">Separation Anxiety</h3>
             <p class="text-sm">Anxiety</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-dealing.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-dealing.png" alt="" />
             <h3 class="text-base font-bold pt-2">
               Dealing with Social Situations
             </h3>
             <p class="text-sm">Tips</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-controlling.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-controlling.png" alt="" />
             <h3 class="text-base font-bold pt-2">
               Controlling Negative Thoughts
             </h3>
             <p class="text-sm">Tips</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-stress.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-stress.png" alt="" />
             <h3 class="text-base font-bold pt-2">Tips for Reducing Stress</h3>
             <p class="text-sm">Tips</p>
           </a>
-          <a href="#" class="flex flex-col px-2 pb-6 hover:brightness-75">
-            <img src="/src/images/blog/blog-medication.png" alt="" />
+          <a
+            href="blog-read.html"
+            class="flex flex-col px-2 pb-6 hover:brightness-75"
+          >
+            <img src="../src/images/blog/blog-medication.png" alt="" />
             <h3 class="text-base font-bold pt-2">
               Medication-induced Anxiety Disorder
             </h3>
@@ -353,5 +399,20 @@
       </div>
     </footer> -->
     <!-- FOOTER END -->
+
+    <script>
+      var lastScrollTop;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>

@@ -4,12 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calmy | Blog : Types Of Breathing</title>
-    <link rel="stylesheet" href="/public/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/src/icons/favicon.svg" />
+    <link rel="stylesheet" href="css/build.css" />
+    <link rel="icon" type="image/x-icon" href="../src/icons/favicon.svg" />
+    <style>
+      body {
+        background-image: url("../src/images/background.svg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
-  <body class="bg-main-bg bg-fixed">
+  <body>
     <!-- HEADER START -->
-    <header class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5">
+    <header
+      class="fixed w-screen backdrop-blur-xl bg-white bg-opacity-5"
+      id="navbar"
+    >
       <nav class="flex flex-row justify-between px-6 py-6 items-center">
         <div class="items-center">
           <a href="/public/index.html">
@@ -51,7 +61,7 @@
           </ul>
           <a
             href="signin.html"
-            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins hover:bg-transparent hover:text-black"
+            class="bg-primary px-12 border-2 border-primary py-2 w-fit rounded-full text-base text-white font-poppins drop-shadow-lg Light hover:bg-transparent hover:text-black"
           >
             Get Started
           </a>
@@ -62,7 +72,7 @@
 
     <section class="flex flex-col w-screen h-screen">
       <img
-        src="/src/images/blog/blog-breath.png"
+        src="../src/images/blog/blog-breath.png"
         alt=""
         width=""
         height="100px"
@@ -162,5 +172,20 @@
         </ol>
       </div>
     </section>
+
+    <script>
+      var lastScrollTop;
+      navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.top = "-100px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
   </body>
 </html>
